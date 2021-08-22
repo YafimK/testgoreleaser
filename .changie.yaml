@@ -5,7 +5,7 @@ changelogPath: CHANGELOG.md
 versionExt: md
 versionFormat: '## {{.Version}} - {{.Time.Format "2006-01-02"}}'
 kindFormat: '### {{.Kind}}'
-changeFormat: '* [#{{.Custom.PR}}](https://github.com/YafimK/testgoreleaser/pull/{{.Custom.PR}}) {{.Body}}'
+changeFormat: '* [PR: #{{.Custom.PR}}](https://github.com/YafimK/testgoreleaser/pull/{{.Custom.PR}}); [Jira p81-#{{.Custom.JiraID}}](https://perimeter81.atlassian.net/browse/p81-{{.Custom.JiraID}}): {{.Body}}'
 kinds:
   - label: Added
   - label: Changed
@@ -15,5 +15,8 @@ kinds:
   - label: Security
 custom:
 - key: PR
+  type: int
+  minInt: 1
+- key: JiraID
   type: int
   minInt: 1
