@@ -1,1 +1,2 @@
 # testgoreleaser2
+Funstuff
