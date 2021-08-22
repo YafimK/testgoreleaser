@@ -1,2 +1,2 @@
 # testgoreleaser2
-Funstuff
+CoolChange
